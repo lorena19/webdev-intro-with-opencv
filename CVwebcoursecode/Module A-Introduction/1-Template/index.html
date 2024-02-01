@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+
+    <!-- Add OpenCV -->
+    <script async src="../../Resources/opencv.js" onload="openCvReady()"></script>
+    <!-- Link to the css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    <!-- Main Page -->
+    <div class="main-page">
+        
+        <div class="side-line"></div>
+
+        <div class="side-bar">
+            <span class="circle"><i class="material-symbols-outlined" style="font-size: 36px; color: white;">settings</i></span>
+            <span class="circle"><i class="material-symbols-outlined" style="font-size: 36px; color: white;">info</i></span>
+            <span class="circle"><i class="material-symbols-outlined" style="font-size: 36px; color: white;">visibility</i></span>
+            <span class="circle"><i class="material-symbols-outlined" 
+                style="font-size: 36px; color: white;">auto_fix_normal</i></span>
+            <span class="circle blue-circle"><i class="material-symbols-outlined" style="font-size: 36px; color: white;">videocam</i></span>
+        </div>
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <!-- Header -->
+            <div class="header">
+                <div class="empty-side"></div>
+                <h1>CV Web</h1>
+                <div class="logo-container"><img src="../../Resources/Template/Logo.png" alt="" width="120"></div>
+            </div>
+            <!-- Tablet Container -->
+            <div class="tablet-container">
+                <img id="tablet-image" src="../../Resources/Template/tablet.png" width= "1050" height="780" alt="">
+                <canvas id="main-canvas" width="960" height="720">
+                    <img id="img-main" src="../../Resources/Template/car.png" width="960" height="720" alt="">
+                </canvas>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Link to JS file -->
+    <script src="main.js"></script>
+</body>
+</html>
